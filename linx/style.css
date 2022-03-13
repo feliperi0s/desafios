@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+:root {
+    
+    --cor0:#F3FEB0;
+    --cor1:#FEA443;
+    --cor2:#705E78;
+    --cor3:#812F33;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+background-color: white;
+}
+
+header {
+    background-color: var(--cor2);
+    text-align: center;
+    padding-top: 40px;
+    min-height: 120px;
+    color: white;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.39);
+    font-family: sans-serif;
+}
+header > h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+header > p {
+    font-size: 0.8em;
+}
+
+nav {
+    margin: 50px 120px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--cor1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+
+#botao1
+{
+    padding: 2px 1px 3px 1px;
+    margin: 0 0px 0 -10px ;
+    border-radius: 3px;
+    border:3px solid white;
+    text-align: center;
+}
+#botao {
+    background-color: #705E78;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: -7px;
+}
+
+#seletor {
+    border: none;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards
+{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    height: 250px;
+    padding: 50px 20px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.cards:hover {
+
+    height: 350px;
+    cursor: pointer;
+
+}
+
+.imagem
+ {
+     position: relative;
+     width: 200px;
+     height: 200px;
+     padding-left: 5px;
+     margin: -30px 0 20px 0;
+     z-index: 1;
+ }
+
+ .imagem img {
+     max-width: 100%;
+ }
+
+ .texto {
+     font-family: sans-serif;
+ }
+
+ .texto > h1 {
+     font-size: 1em;
+ }
+ .texto > p {
+    font-size: 0.7em;
+    padding: 3px;
+ }
+
+.inclusao {
+    margin-top: -30px;
+    font-size: 0.3em;
+}
+
+.botao1 {
+    background-color: var(--cor2);
+    padding: 3px 72px;
+    margin: 0 0 10px -12px ;
+    color: white;
+    border-radius: 10px;
+    
+
+}
+.botao2 {
+    background-color: var(--cor3);
+    padding: 3px 60px;
+    margin: 0 0 10px -12px ;
+    color: white;
+    border-radius: 10px;
+
+}
+.botoes {
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: inherit;
+    padding: 5px 5px 5px 25px ;
+
+}
+.cardsgr .cards:hover .botoes {
+
+    visibility: visible;
+    transition-delay: 0.1s;
+}
+
+.captura {
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.349);
+    margin: auto;
+    max-width: 876px;
+    text-align: left;
+    max-height: 122px;
+    color: white;
+    background-color: #E5E5E5;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+
+#captura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#geralCaptura {
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 10px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #705E78;
+}
+
+.cadastro {
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+}
+
+ #foto {
+    width: 50%;
+     padding: 0px 50px;
+ }
+ #linx {
+     padding: 50px 50px;
+    margin: auto;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+ }
+
+ footer {
+     padding-top: 25px;
+     background-color: #422755;
+     height: 100px;
+     color: white;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ #vermais {
+     display: flex;
+     justify-content: center;
+     background-color: #422755;
+     color: white;
+    margin: auto;
+     padding: 10px;
+     width: 90px;
+    border-radius: 10px;
+ }
+
+
+

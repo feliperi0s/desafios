@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --cor0:#1046C2;
+    --cor1:#107BCC;
+    --cor2:#189BB5;
+    --cor3:#10CCB9;
+    --cor4:#10C27D;
+    --font: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--cor3);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 1100px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteudo {
+    max-width: 300px;
+    height: 220px;
+    position: relative;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    transition:0.5s ease-in-out;
+}
+.conteudo:hover {
+    height: 500px;
+}
+.imagem {
+    position: relative;
+    width: 260px;
+    height: 200px; 
+    z-index: 1;
+}
+.img {
+    max-width: 100%;
+}
+.texto {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.conteudo:hover .texto {
+    visibility: visible;
+    transition: 0.3s;
+    cursor:pointer;
+}
